@@ -1,6 +1,6 @@
 # ECSNeT++
 ECSNeT++ is a simulation toolkit for simulating the execution of 
-Distributed Stream Processing applications on Edge anc Cloud Computing environments. 
+Distributed Stream Processing applications on Edge and Cloud Computing environments. 
 ECSNeT++ is implemented using the [OMNeT++](https://omnetpp.org/) and the [INET framework](https://inet.omnetpp.org/).
 
 For more information please contact [gamarasinghe@student.unimelb.edu.au](mailto:gamarasinghe@student.unimelb.edu.au).
@@ -21,12 +21,12 @@ After cloning the repository run ```make makefiles``` followed by ```make```.
 
 ## Extending the project
 
-### Host devices
+### Creating Host devices
 
 ```WirelessHost``` module or the ```StandardHost``` module of the INET framework can be extended to build either a IEEE 802.11 wireless enabled device or a Ethernet enabled host device respectively.
 See ```src/host``` package for examples.
 
-### Distributed Stream Processing application
+### Preparing a Distributed Stream Processing application topology
 
 ```StreamingSource```, ```StreamingOperator```, ```StreamingSink``` module are represent each Source, Operator and Sink in the topology. ECSNeT++
 expects an adjacency matrix of the application topology (See ```configs\etl_app_topology.txt```) and a placement plan
@@ -89,16 +89,16 @@ An example placement plan is shown below.
 The `ecsnet_.model.source.eventrate.ISourceEventRateDistribution` interface should be extended to implement different source event rate distributions.
 See `ecsnet_.model.source.eventrate.FixedSourceEventRateDistribution` module for an example.
 
-#### Source Message Size
+##### Source Message Size
 The `ecsnet_.model.source.msgsize.IMessageSizeDistribution` interface should be extended to implement different source message size distributions. 
 See `ecsnet_.model.source.msgsize.FixedMessageSizeDistribution` module for an example.
 
 #### Operator Characteristics
 
-#### Operator Selectivity Ratio
+##### Operator Selectivity Ratio
 The `ecsnet_.model.operator.selectivity.IOperatorSelectivityDistribution` interface should be extended to implement different operator selectivity ratio distributions.
 See `ecsnet_.model.operator.selectivity.FixedSelectivityDistribution` module for an example.
 
-#### Operator Productivity Ratio
+##### Operator Productivity Ratio
 The `ecsnet_.model.operator.productivity.IOperatorProductivityDistribution` interface should be extended to implement different operator productivity ratio distributions.
 See `ecsnet_.model.operator.productivity.FixedProductivityDistribution` module for an example.
