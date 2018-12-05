@@ -23,12 +23,12 @@ After cloning the repository run ```make makefiles``` followed by ```make```.
 
 ### Creating Host devices
 
-```WirelessHost``` module or the ```StandardHost``` module of the INET framework can be extended to build either a IEEE 802.11 wireless enabled device or a Ethernet enabled host device respectively.
+```WirelessHost``` module or the ```StandardHost``` module of the INET framework can be extended to build either an IEEE 802.11 wireless enabled device or an Ethernet enabled host device respectively.
 See ```src/host``` package for examples.
 
 ### Preparing a Distributed Stream Processing application topology
 
-```StreamingSource```, ```StreamingOperator```, ```StreamingSink``` module are represent each Source, Operator and Sink in the topology. ECSNeT++
+```StreamingSource```, ```StreamingOperator```, ```StreamingSink``` modules represent each Source, Operator and Sink in the topology. ECSNeT++
 expects an adjacency matrix of the application topology (See ```configs\etl_app_topology.txt```) and a placement plan
 (See ```configs\1.xml```). 
 
