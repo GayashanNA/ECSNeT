@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/org.omnetpp.cdt.gnu.config.debug.392054958/PATH/delimiter=;
+environment/project/org.omnetpp.cdt.gnu.config.debug.392054958/PATH/operation=replace
+environment/project/org.omnetpp.cdt.gnu.config.debug.392054958/PATH/value=/home/gayashan/Tools/omnetpp-5.1.1/bin\:/home/gayashan/bin\:/home/gayashan/.local/bin\:/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/usr/games\:/usr/local/games\:/snap/bin\:/usr/local/lib
+environment/project/org.omnetpp.cdt.gnu.config.debug.392054958/append=true
+environment/project/org.omnetpp.cdt.gnu.config.debug.392054958/appendContributed=true

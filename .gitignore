@@ -1,0 +1,11 @@
+*.[oa]
+*~
+*.swp
+out/
+simulations/runexpr.sh
+simulations/Makefile*
+src/EdgeCloudSimulator
+simulations/results/
+simulations/results/export/
+*.anf
+TestEdgeCloud
