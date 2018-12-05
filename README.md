@@ -1,5 +1,7 @@
 # ECSNeT++
-ECSNeT++ is a simulation toolkit implemented using the [OMNeT++](https://omnetpp.org/) and the [INET framework](https://inet.omnetpp.org/).
+ECSNeT++ is a simulation toolkit for simulating the execution of 
+Distributed Stream Processing applications on Edge anc Cloud Computing environments. 
+ECSNeT++ is implemented using the [OMNeT++](https://omnetpp.org/) and the [INET framework](https://inet.omnetpp.org/).
 
 For more information please contact [gamarasinghe@student.unimelb.edu.au](mailto:gamarasinghe@student.unimelb.edu.au).
 
@@ -80,3 +82,23 @@ An example placement plan is shown below.
   </device>
 </devices>
 ```
+
+#### Source Characteristics
+
+##### Source Event Rate
+The `ecsnet_.model.source.eventrate.ISourceEventRateDistribution` interface should be extended to implement different source event rate distributions.
+See `ecsnet_.model.source.eventrate.FixedSourceEventRateDistribution` module for an example.
+
+#### Source Message Size
+The `ecsnet_.model.source.msgsize.IMessageSizeDistribution` interface should be extended to implement different source message size distributions. 
+See `ecsnet_.model.source.msgsize.FixedMessageSizeDistribution` module for an example.
+
+#### Operator Characteristics
+
+#### Operator Selectivity Ratio
+The `ecsnet_.model.operator.selectivity.IOperatorSelectivityDistribution` interface should be extended to implement different operator selectivity ratio distributions.
+See `ecsnet_.model.operator.selectivity.FixedSelectivityDistribution` module for an example.
+
+#### Operator Productivity Ratio
+The `ecsnet_.model.operator.productivity.IOperatorProductivityDistribution` interface should be extended to implement different operator productivity ratio distributions.
+See `ecsnet_.model.operator.productivity.FixedProductivityDistribution` module for an example.
