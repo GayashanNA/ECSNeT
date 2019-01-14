@@ -3,7 +3,7 @@ ECSNeT++ is a simulation toolkit for simulating the execution of
 Distributed Stream Processing applications on Edge and Cloud Computing environments. 
 ECSNeT++ is implemented using the [OMNeT++](https://omnetpp.org/) and the [INET framework](https://inet.omnetpp.org/).
 
-For more information please contact [gamarasinghe@student.unimelb.edu.au](mailto:gamarasinghe@student.unimelb.edu.au).
+Source is avialble at [GitHub](https://github.com/GayashanNA/ECSNeT). For more information please contact [gamarasinghe@student.unimelb.edu.au](mailto:gamarasinghe@student.unimelb.edu.au).
 
 ## Building the project
 
